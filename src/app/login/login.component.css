@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
 
 *{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
 }
 
-.form-container{
+
+
+.form-container{ 
   display: flex;
   flex-direction: row;
+  margin: 90px 0 0 0;
 }
 
 .left{
@@ -15,8 +18,46 @@
 
 .right{
   width: 345px;
+  background-color: #fff;
+  padding: 40px 10px 20px 10px;
 }
 
+.right-welcome{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+
+.right-logo{
+  padding: 0 0 0 103px;
+}
+
+.right-para{
+  font-family: Poppins;
+  font-style: bold;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 10px;
+  color: #434246;
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.checkbox .right-pforgot{
+  color: #E45415;
+}
 .form-signin {
   width: 100%;
   max-width: 330px;

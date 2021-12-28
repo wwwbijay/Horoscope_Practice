@@ -14,15 +14,14 @@
   .sideBrand{
     padding: 50px;
   }
- 
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
   #main {
     transition: margin-left .5s;
 
   }
   .sidenav.open{
 
-    width: 250px;
+    width: 250px; 
     
 }
   .main-opennav{
@@ -32,6 +31,8 @@
       background: #f3f3f3;
       padding: 50px 30px;
   }
+
+  
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

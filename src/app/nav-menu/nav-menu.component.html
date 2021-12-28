@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
       <div class="navbar_left">
-        <a class="navbar-brand menu_icon" href="#">
-          <span class="material-icons md-36"  (click) = "openFromChild()">
+        <a class="navbar-brand menu_icon">
+          <span class="material-icons md-36 "  (click) = "openFromChild()"> 
             {{openNav ? 'menu_open' : 'menu'}}
           </span>
        </a>
@@ -9,7 +9,7 @@
           <span class="material-icons">
             search
           </span>
-          <input type="search" placeholder="Search keywords...">
+          <input type="search" placeholder="Search keywords..."> 
           
        </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="icon_links" id="icon_links">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item admin_notification">
-              <a class="nav-link active" id="ddMenuNotification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link active" id="ddMenuNotification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                 <span class="badge badge-danger navbar-badge">3</span>
                 <span class="material-icons">
                   notifications_active
@@ -39,6 +39,17 @@
                  
               </div>
             </li>
+            <!-- Mail Icon -->
+            <li class="nav-item admin_notification">
+              <a class="nav-link active" id="ddMenuNotification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                <span class="badge badge-danger navbar-badge">3</span>
+                <span class="material-icons">
+                  mail
+                </span>
+              </a>
+            </li>
+
+
             <li class="nav-item admin_userprofile dropdown">
               <a class="nav-link" id="dropdownMenuButton" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="assets/img_profile.png">

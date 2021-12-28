@@ -21,7 +21,7 @@ const routes: Routes = [
   },
 
   {
-    component: UserManagementHomeComponent,
+    component: UserManagementHomeComponent, 
     path: 'usermanagement'
   },
 

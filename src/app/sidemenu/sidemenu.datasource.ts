@@ -10,12 +10,12 @@
                 subtitle: 'China',
                 link: '#',
             },
-            {
-                subtitle: 'India',
+            { 
+                subtitle: 'India', 
                 link: '#',
             },
             {
-                subtitle: 'Japan',
+                subtitle: 'Japan', 
                 link: '#',               
             }
         ]
