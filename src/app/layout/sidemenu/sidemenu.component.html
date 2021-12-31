@@ -1,0 +1,20 @@
+<ul class="">
+   <li *ngFor="let data of datas; index as i;"  [routerLinkActive]="['active']" 
+   [routerLinkActiveOptions]="{ exact: true }"> 
+       <a [routerLink] ="data['link']"> 
+            {{ data['title'] }}
+        </a>
+        <ul>
+            <li *ngFor='let obj of data["submenu"]'>  
+                <a href="{{ obj.link }}"> 
+                     {{ obj.subtitle }}
+                </a>
+            </li>
+        </ul>
+    </li>
+ </ul>  
+
+
+
+ 
+

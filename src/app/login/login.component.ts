@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 
   loginUser() {
     if (this.loginform.value.user === this.name && this.loginform.value.password === this.pword) {
-      alert('Login Sucessful');
+      // alert('Login Sucessful');
       localStorage.setItem('token', "hwuheqwoeqo.fwirhiow") 
       this.router.navigate(['']);
     }

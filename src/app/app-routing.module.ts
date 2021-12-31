@@ -1,43 +1,56 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { LoginComponent } from './login/login.component';
-import { DashboardHomeComponent } from './Routing/dashboard-home/dashboard-home.component';
-import { HoroscopeHomeComponent } from './Routing/horoscope-home/horoscope-home.component';
-import { PaymentMgmtHomeComponent } from './Routing/payment-mgmt-home/payment-mgmt-home.component';
-import { SettingsHomeComponent } from './Routing/settings-home/settings-home.component';
-import { UserManagementHomeComponent } from './Routing/user-management-home/user-management-home.component';
-import { AuthGuard } from './shared/auth.guard'; 
+import { DashboardHomeComponent } from './horoscope/dashboard-home/dashboard-home.component';
+import { HoroscopeHomeComponent } from './horoscope/horoscope-home/horoscope-home.component';
+import { PaymentMgmtHomeComponent } from './horoscope/payment-mgmt-home/payment-mgmt-home.component';
+import { SettingsHomeComponent } from './horoscope/settings-home/settings-home.component';
+import { UserManagementHomeComponent } from './horoscope/user-management-home/user-management-home.component';
+import { AuthGuard } from './Authorization/auth.guard'; 
 
 const routes: Routes = [
+
   {
-    component: DashboardHomeComponent,
+    component: ControlPanelComponent,
     path: '',
     canActivate: [AuthGuard],
-  },
 
-  {
-    component: HoroscopeHomeComponent,
-    path: 'horoscope'
-  },
-
-  {
-    component: UserManagementHomeComponent, 
-    path: 'usermanagement'
-  },
-
-  {
-    component: PaymentMgmtHomeComponent,
-    path: 'expensemanagement'
-  },
-
-  {
-    component: SettingsHomeComponent,
-    path: 'settings'
-  },
+    children: [{
+      component: DashboardHomeComponent,
+      path: 'dashboard',
+      canActivate: [AuthGuard],
+    },
+  
+    {
+      component: HoroscopeHomeComponent,
+      path: 'horoscope',
+      canActivate: [AuthGuard],
+    },
+  
+    {
+      component: UserManagementHomeComponent, 
+      path: 'usermanagement',
+      canActivate: [AuthGuard],
+    },
+  
+    {
+      component: PaymentMgmtHomeComponent,
+      path: 'expensemanagement',
+      canActivate: [AuthGuard],
+    },
+  
+    {
+      component: SettingsHomeComponent,
+      path: 'settings',
+      canActivate: [AuthGuard],
+    },]
+  },  
 
   {
     component: LoginComponent,
-    path: 'login'
+    path: 'login',
+    // canActivate: [AuthGuard],
   },
 
  

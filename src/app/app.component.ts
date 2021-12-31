@@ -7,18 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  openNav: boolean = true;
+  openNav: boolean = true; 
 
   constructor(public router: Router) { 
   
-  }
-  
-  /* Set the width of the side navigation to 250px */
-  toggleSideNav() {
-    
-    this.openNav = !this.openNav;
-    
-  }
+  } 
 
-  
+  toggleSideNav() {  
+    this.openNav = !this.openNav;  
+  } 
+   
 }
