@@ -1,6 +1,6 @@
 /* The side navigation menu */
 .sidenav {
-    height: 100%;
+    height: 100%; 
     width: 0; 
     position: fixed; 
     z-index: 1; 
@@ -30,8 +30,6 @@
       background: #f3f3f3;
       padding: 50px 30px;
   }
-
-  
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {

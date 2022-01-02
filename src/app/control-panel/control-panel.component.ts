@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
 export class ControlPanelComponent implements OnInit {
   openNav: boolean = true;
 
-  constructor(public router: Router) { }
+  constructor(public router: Router) { } 
 
   ngOnInit(): void {
   }
 
-  toggleSideNav() {  
+  toggleSideNav() {   
     this.openNav = !this.openNav;  
   } 
   

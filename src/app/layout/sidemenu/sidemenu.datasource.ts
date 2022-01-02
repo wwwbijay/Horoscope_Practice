@@ -4,21 +4,21 @@
  export let dataSource:  any[] = [
     {
         title: 'Dashboard',  
-        link: 'dashboard',
-        submenu: [
-            {
-                subtitle: 'China',
-                link: '#',
-            },
-            { 
-                subtitle: 'India', 
-                link: '#',
-            },
-            {
-                subtitle: 'Japan', 
-                link: '#',               
-            }
-        ]
+        link: '',
+        // submenu: [
+        //     {
+        //         subtitle: 'China',
+        //         link: '#',
+        //     },
+        //     { 
+        //         subtitle: 'India', 
+        //         link: '#',
+        //     },
+        //     {
+        //         subtitle: 'Japan', 
+        //         link: '#',               
+        //     }
+        // ]
     },
     {
         title: 'Horoscope',
@@ -26,27 +26,31 @@
         submenu: [
             {
                 subtitle: 'Manage Horoscope',
-               link: "#"
+                link: "horoscope/manage",
             },
             {
                 subtitle: 'Daily Update',
-                link: '#',
+                link: 'horoscope/update-daily',
             },
             {
                 subtitle: 'Weekly Update',
-                link: '#',
+                link: 'horoscope/update-weekly',
             },
             {
                 subtitle: 'Monthly Update',
-                link: '#',
+                link: 'horoscope/update-monthly',
+            },
+            {
+                subtitle: 'Yearly Update',
+                link: 'horoscope/update-yearly',
             }
         ]
     },
     {
-        title: 'Expense Management',
-        link: 'expensemanagement',
+        title: 'User Management',
+        link: 'usermanagement',
         submenu: [
-            {
+            { 
                 subtitle: 'Brazil',
                 link: '#',
             },
@@ -61,8 +65,8 @@
         ]
     },
     {
-        title: 'User Management',
-        link: 'usermanagement',
+        title: 'Payment Management',
+        link: 'paymentmanagement',
         submenu: [
             {
                 subtitle: 'Canada',
@@ -80,7 +84,7 @@
     },
     {
         title: 'Settings',
-        link: 'settings',
+        link: 'settings', 
         submenu: [
             {
                 subtitle: 'Brazil',

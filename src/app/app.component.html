@@ -1,17 +1,20 @@
-<!-- <div #Sidenav id="mySidenav" class="sidenav" *ngIf="this.router.url !== '/login'"  [ngClass]="openNav ? 'open' : ' '"> 
+<div #Sidenav id="mySidenav" class="sidenav" *ngIf="this.router.url !== '/login'"  [ngClass]="openNav ? 'open' : ' '"> 
     <div class="sideBrand"> 
         <img src="assets/mypay-logo.png">
     </div>
     <app-sidemenu></app-sidemenu>
-</div> -->
+</div>
 
-<!-- <div id="main" class="openNav" [ngClass]="openNav ? 'main-opennav' : ' '"> -->
-    <!-- <app-nav-menu *ngIf="this.router.url !== '/login'"  [openNav] = openNav (openSideNavFromChild) = "toggleSideNav()" ></app-nav-menu> -->
-    <!-- <div  [ngClass] = "(this.router.url === '/login') ? '' : 'content'">  -->
+ <div id="main" class="openNav" [ngClass]="openNav ? 'main-opennav' : ' '">
+    <app-nav-menu *ngIf="this.router.url !== '/login'"  [openNav] = openNav (openSideNavFromChild) = "toggleSideNav()" ></app-nav-menu>
+    <div  [ngClass] = "(this.router.url === '/login') ? '' : 'content'">  
+        <div class="breadcrumbs">
+            <app-breadcrumbs></app-breadcrumbs>
+        </div>
         <router-outlet>
         </router-outlet>    
-    <!-- </div>   -->
-<!-- </div> -->
+    </div>  
+</div>  
      
 
 

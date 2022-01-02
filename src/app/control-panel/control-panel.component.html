@@ -1,45 +1,49 @@
-<div [ngClass]="(router.url === '/') ? 'control-panel' : 'no-control-panel'"> 
+<!-- <div [ngClass]="(router.url === '/') ? 'control-panel' : 'no-control-panel'"> --> -->
   <!-- For Side Bar -->
-  <div *ngIf="!(router.url === '/')"  #Sidenav id="mySidenav" class="sidenav"  [ngClass]="openNav ? 'open' : ' '"> 
-    <div class="sideBrand"> 
-      <a [routerLink]= "''">
-        <img src="assets/mypay-logo.png"> 
+  <!-- <div  #Sidenav id="mySidenav" class="sidenav" [ngClass]="openNav ? 'open' : ' '">
+    <div class="sideBrand">
+      <a [routerLink]="''">
+        <img src="assets/mypay-logo.png">
       </a>
     </div>
-    <app-sidemenu></app-sidemenu> 
-  </div>
+    <app-sidemenu></app-sidemenu>
+  </div> -->
 
   <!-- For NavBar -->
 
-  <div id="main" class="openNav" [ngClass]="!(router.url === '') && openNav ? 'main-opennav' : ' '">
-    <app-nav-menu [openNav] = openNav (openSideNavFromChild) = "toggleSideNav()" ></app-nav-menu>
+  <!-- <div id="main" class="openNav" [ngClass]="!(router.url === '/') && openNav ? 'main-opennav' : ' '">
+    <app-nav-menu [openNav]=openNav (openSideNavFromChild)="toggleSideNav()"></app-nav-menu>
 
-    <div *ngIf="(this.router.url === '/')" class="panel-contents"> 
-    <!-- <div class="panel-contents"> -->
-      <div class="heading">
-          <h1>Control Panel</h1> 
-      </div>
+    <div class="breadcrumbs">
+      <app-breadcrumbs></app-breadcrumbs>
+    </div>
 
-      <div class="page-entry text-center">
+    <div *ngIf="(this.router.url === '/')" class="panel-contents">
+      <div class="panel-contents">
+        <div class="heading">
+          <h1>Control Panel</h1>
+        </div>
+
+        <div class="page-entry text-center">
           <div class="row">
             <div class="col-sm">
-              <a [routerLink]= "'/horoscope'"> Horoscope </a>
+              <a [routerLink]="'/horoscope'"> Horoscope </a>
             </div>
             <div class="col-sm">
-              <a href="/expensemanagement"> Expense Management </a>
+              <a href="#"> Expense Management </a>
             </div>
             <div class="col-sm">
-              <a href="/usermanagement"> User Management </a>
+              <a href="#"> User Management </a>
             </div>
             <div class="col-sm">
-              <a href="/settings"> Settings </a>
+              <a href="#"> Settings </a>
             </div>
           </div>
-      </div>
-    </div> 
-    <!-- End of Control panel --> 
-    <router-outlet>
-    </router-outlet>
+        </div>
+      </div> -->
+      <!-- End of Control panel -->
+      <!-- <router-outlet>
+      </router-outlet>
 
-  </div>
-</div>
+    </div>
+  </div> -->
