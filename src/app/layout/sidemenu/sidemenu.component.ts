@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { dataSource } from './sidemenu.datasource';
-import { Router, NavigationEnd } from '@angular/router'; 
+import { Router } from '@angular/router'; 
 
 
 
 @Component({
   selector: 'app-sidemenu',
-  templateUrl: './sidemenu.component.html',
+  templateUrl: './sidemenu.component.html', 
   styleUrls: ['./sidemenu.component.css']
 })
 export class SidemenuComponent implements OnInit {

@@ -1,0 +1,25 @@
+<nav class="navigate-horoscope"> 
+    <ul>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a [routerLink]="'/horoscope'">Manage Horoscope</a>
+        </li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a [routerLink]="'/horoscope/update-daily'">Daily Horoscope</a>
+        </li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a [routerLink]="'/horoscope/update-weekly'">Weekly Horoscope</a>
+        </li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a [routerLink]="'/horoscope/update-monthly'">Monthly Horoscope</a>
+        </li>
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a [routerLink]="'/horoscope/update-yearly'">Yearly Horoscope</a>
+        </li>
+    </ul>
+</nav>
+
+<div *ngIf="this.router.url==='/horoscope'" class="horoscope-page">
+    <p>horoscope works!</p>
+
+</div>
+<router-outlet></router-outlet>

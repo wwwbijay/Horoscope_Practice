@@ -19,7 +19,12 @@ import { UsermanagementComponent } from './user-management/usermanagement/userma
 import { PaymentmanagementComponent } from './payment-management/paymentmanagement/paymentmanagement.component';
 import { SettingsComponent } from './settings/settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HoroscopeComponent } from './horoscope/horoscope/horoscope.component';
+// import { HoroscopeComponent } from './horoscope/horoscope/horoscope.component';
+import { HoroscopeComponent } from './horoscope/horoscope.component';
+import { NgChartsModule } from 'ng2-charts';
+import { PieChartComponent } from './layout/pie-chart/pie-chart.component'; 
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 @NgModule({
   declarations: [
@@ -43,17 +48,19 @@ import { HoroscopeComponent } from './horoscope/horoscope/horoscope.component';
     SettingsComponent,
     DashboardComponent,
     HoroscopeComponent,
+    PieChartComponent,  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     NoopAnimationsModule,
-    // FormsModule,
     ReactiveFormsModule,
+    NgChartsModule,
+    MatTabsModule, 
   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 

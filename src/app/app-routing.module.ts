@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component'; 
 
-import { HoroscopeComponent } from './horoscope/horoscope/horoscope.component';
+import { HoroscopeComponent } from './horoscope/horoscope.component';
 import { ManageComponent } from './horoscope/manage/manage.component';
 import { UpdateDailyComponent } from './horoscope/update-daily/update-daily.component';
 import { UpdateMonthlyComponent } from './horoscope/update-monthly/update-monthly.component';
