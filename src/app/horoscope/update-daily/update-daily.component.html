@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="headline">
+    <div class="headline"> 
         <h6>Daily Horoscope</h6>
         <button type="button" class="btn btn-primary">Create</button>
     </div>
-  <div class="row">
+  <!-- <div class="row">
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -34,6 +34,13 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </div> -->
+
+  <ul>
+    <li *ngFor="let user of listUsers">
+      {{user.body}} 
+    </li>
+  </ul>
+  
 </div>
  
