@@ -24,6 +24,9 @@ import { NgChartsModule } from 'ng2-charts';
 import { PieChartComponent } from './layout/pie-chart/pie-chart.component'; 
 import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import { PopupComponent } from './Dialogs/popup/popup.component';
+import { CreateComponent } from './Dialogs/create/create.component';
 // import {HttpClientModule} from '@angular/common/http';
 
 
@@ -50,7 +53,9 @@ import { HttpClientModule } from '@angular/common/http';
     SettingsComponent,
     DashboardComponent,
     HoroscopeComponent,
-    PieChartComponent,  
+    PieChartComponent,
+    PopupComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
     NgChartsModule,
     MatTabsModule, 
     HttpClientModule,
+    MatDialogModule,
   
   ],
   providers: [],
