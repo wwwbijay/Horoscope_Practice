@@ -9,7 +9,6 @@ import { SidemenuComponent } from './layout/sidemenu/sidemenu.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
-import { ManageComponent } from './horoscope/manage/manage.component';
 import { UpdateDailyComponent } from './horoscope/update-daily/update-daily.component';
 import { UpdateMonthlyComponent } from './horoscope/update-monthly/update-monthly.component';
 import { UpdateWeeklyComponent } from './horoscope/update-weekly/update-weekly.component';
@@ -25,9 +24,11 @@ import { PieChartComponent } from './layout/pie-chart/pie-chart.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
-import { PopupComponent } from './Dialogs/popup/popup.component';
-import { CreateComponent } from './Dialogs/create/create.component';
-// import {HttpClientModule} from '@angular/common/http';
+import { CreateComponent } from './Dialogs/create-daily/create.component';
+import { CreateWeeklyComponent } from './Dialogs/create-weekly/create-weekly.component';
+import { CreateManageComponent } from './Dialogs/create-manage/create-manage.component';
+import { CreateMonthlyComponent } from './Dialogs/create-monthly/create-monthly.component';
+import { CreateYearlyComponent } from './Dialogs/create-yearly/create-yearly.component';
 
 
 
@@ -36,13 +37,11 @@ import { CreateComponent } from './Dialogs/create/create.component';
     AppComponent,
     NavMenuComponent,
     SidemenuComponent,
-    ManageComponent,
     UpdateDailyComponent,
     UpdateMonthlyComponent,
     UpdateYearlyComponent,
     LoginComponent,
     ControlPanelComponent,
-    ManageComponent,
     UpdateDailyComponent,
     UpdateMonthlyComponent,
     UpdateWeeklyComponent,
@@ -54,15 +53,17 @@ import { CreateComponent } from './Dialogs/create/create.component';
     DashboardComponent,
     HoroscopeComponent,
     PieChartComponent,
-    PopupComponent,
     CreateComponent,
+    CreateWeeklyComponent,
+    CreateManageComponent,
+    CreateMonthlyComponent,
+    CreateYearlyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     NoopAnimationsModule,
-    // FormsModule,
     ReactiveFormsModule,
     NgChartsModule,
     MatTabsModule, 

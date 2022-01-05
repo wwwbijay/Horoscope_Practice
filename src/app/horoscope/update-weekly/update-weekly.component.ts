@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CreateWeeklyComponent } from 'src/app/Dialogs/create-weekly/create-weekly.component';
 
 @Component({
   selector: 'app-update-weekly',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateWeeklyComponent implements OnInit {
 
-  constructor() { }
+  constructor(  private dialogRef: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-}
+  openDialog(){
+    this.dialogRef.open(CreateWeeklyComponent);
+  }
+} 

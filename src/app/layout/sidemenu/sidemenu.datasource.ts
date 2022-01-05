@@ -25,8 +25,8 @@
         link: 'horoscope',
         submenu: [
             {
-                subtitle: 'Manage Horoscope',
-                link: "horoscope/manage",
+                subtitle: ' Horoscope Master',
+                link: "horoscope",
             },
             {
                 subtitle: 'Daily Update',

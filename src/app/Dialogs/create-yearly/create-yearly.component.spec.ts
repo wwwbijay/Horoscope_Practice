@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaymentMgmtHomeComponent } from './payment-mgmt-home.component';
+import { CreateYearlyComponent } from './create-yearly.component';
 
-describe('PaymentMgmtHomeComponent', () => {
-  let component: PaymentMgmtHomeComponent;
-  let fixture: ComponentFixture<PaymentMgmtHomeComponent>;
+describe('CreateYearlyComponent', () => {
+  let component: CreateYearlyComponent;
+  let fixture: ComponentFixture<CreateYearlyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaymentMgmtHomeComponent ]
+      declarations: [ CreateYearlyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PaymentMgmtHomeComponent);
+    fixture = TestBed.createComponent(CreateYearlyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

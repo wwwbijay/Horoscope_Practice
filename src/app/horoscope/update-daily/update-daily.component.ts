@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 // import { Observable } from 'rxjs';
 import { UserService } from 'src/app/services/user.service';
+// import { UserService } from '../services/user.service';
 import { MatDialog } from '@angular/material/dialog';
-import { CreateComponent } from 'src/app/Dialogs/create/create.component';
+import { CreateComponent } from 'src/app/Dialogs/create-daily/create.component';
 
 @Component({
   selector: 'app-update-daily',
   templateUrl: './update-daily.component.html',
   styleUrls: ['./update-daily.component.css'], 
-}) 
-export class UpdateDailyComponent implements OnInit {
+})  
+
+export class UpdateDailyComponent implements OnInit { 
   listUsers!: any;
   constructor(
-    private userdataService: UserService,
+    private userdataService: UserService, 
     private dialogRef: MatDialog
   ) {
     this.getusers();

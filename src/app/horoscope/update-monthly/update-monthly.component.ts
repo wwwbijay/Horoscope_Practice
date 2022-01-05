@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CreateMonthlyComponent } from 'src/app/Dialogs/create-monthly/create-monthly.component';
 
 @Component({
   selector: 'app-update-monthly',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateMonthlyComponent implements OnInit {
 
-  constructor() { }
+  constructor( private dialogRef: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  openDialog(){
+    this.dialogRef.open(CreateMonthlyComponent);
   }
 
 }
