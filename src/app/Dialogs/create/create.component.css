@@ -1,0 +1,9 @@
+.save_btn{
+    background-color: #022335;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    float: right;
+    width: 125px;
+    height: 40px;
+}

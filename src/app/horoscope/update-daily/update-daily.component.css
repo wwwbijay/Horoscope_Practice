@@ -4,6 +4,10 @@
     padding: 10px 0;
 } 
 
+.btn{
+    border: none;
+}
+
 .action_link{
     width: 130px;
 }
