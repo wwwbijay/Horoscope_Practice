@@ -15,11 +15,13 @@ export class HoroscopeComponent implements OnInit {
     private horoscopedataservice: HoroscopeDashboardService,
     public router: Router,
     private dialogRef: MatDialog
-    ) { }
+    ) { 
+      this.get_horoscope();
+    }
 
   ngOnInit(): void {}
 
-  getusers() {
+  get_horoscope() {
     console.log(this.horoscopedataservice.listUsers());
     this.horoscopedataservice.listUsers().subscribe((data) => {
       this.listUsers = data;
