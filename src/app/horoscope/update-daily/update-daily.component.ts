@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 // import { Observable } from 'rxjs';
 import { UserService } from 'src/app/services/user.service';
-// import { UserService } from '../services/user.service';
+// import { UserService } from '../services/user.service'; 
 import { MatDialog } from '@angular/material/dialog';
 import { CreateComponent } from 'src/app/Dialogs/create-daily/create.component';
+import { DeleteDailyComponent } from 'src/app/Dialogs/delete-daily/delete-daily.component';
 
 @Component({
   selector: 'app-update-daily',
@@ -31,4 +32,8 @@ export class UpdateDailyComponent implements OnInit {
   openDialog(){
     this.dialogRef.open(CreateComponent);
   }
+
+  deleteDaily(){
+    this.dialogRef.open(DeleteDailyComponent);
+  } 
 }

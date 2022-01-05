@@ -18,20 +18,23 @@
           <td>{{ user.id }}</td>
           <td>{{ user.title }}</td>
           <td>{{ user.title }}</td>
-          <td style="width: 130px;">
+          <td style="width: 130px;"> 
             <!-- Edit -->
             <a class="action_link" [routerLink]="['edit', user.id]">
-              <span class="material-icons-outlined"> mode_edit </span>
+              <span class="edit_icon material-icons-outlined"> mode_edit </span>
+              <!-- <span class="material-icons-round">
+                edit
+              </span> -->
             </a>
 
             <!-- View -->
             <a class="action_link" [routerLink]="['view', user.id]">
-              <span class="material-icons-outlined"> preview </span>
+              <span class="preview_icon material-icons-outlined"> preview </span>
             </a>
             
             <!-- Delete -->
-            <a class="action_link" [routerLink]="['delete', user.id]">
-              <span class="material-icons-outlined"> delete </span>
+            <a class="action_link">
+              <span class="delete_icon material-icons-outlined" (click)="deleteDaily()"> delete </span>
             </a>
           </td>
         </tr>

@@ -1,5 +1,5 @@
 .headline{
-    display: flex;
+    display: flex; 
     justify-content:space-between;
     padding: 10px 0;
 } 
@@ -11,3 +11,24 @@
 .action_link{
     width: 130px;
 }
+
+.edit_icon{
+    background-color: white;
+    color:green;
+}
+
+.preview_icon{
+    background-color: white;
+    color:blue;
+}
+
+.delete_icon{
+    background-color: white;
+    color:red;
+}
+
+span{
+    border-radius: 50%;
+}
+
+

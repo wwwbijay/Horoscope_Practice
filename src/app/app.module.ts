@@ -29,6 +29,7 @@ import { CreateWeeklyComponent } from './Dialogs/create-weekly/create-weekly.com
 import { CreateManageComponent } from './Dialogs/create-manage/create-manage.component';
 import { CreateMonthlyComponent } from './Dialogs/create-monthly/create-monthly.component';
 import { CreateYearlyComponent } from './Dialogs/create-yearly/create-yearly.component';
+import { DeleteDailyComponent } from './Dialogs/delete-daily/delete-daily.component';
 
 
 
@@ -58,6 +59,7 @@ import { CreateYearlyComponent } from './Dialogs/create-yearly/create-yearly.com
     CreateManageComponent,
     CreateMonthlyComponent,
     CreateYearlyComponent,
+    DeleteDailyComponent,
   ],
   imports: [
     BrowserModule,
