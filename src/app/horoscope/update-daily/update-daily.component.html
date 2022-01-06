@@ -3,9 +3,9 @@
     <h6>Daily Horoscope</h6> 
     <button type="button" (click)="openDialog()" class="btn btn-primary">+Create</button>
   </div>  
-  <div class="row">
+  <div class="row"> 
     <table class="table">
-      <thead class="thead-dark"> 
+      <thead class="thead-dark">  
         <tr>
           <th scope="col">SN</th>
           <th scope="col">Date</th> 
@@ -20,16 +20,18 @@
           <td>{{ user.title }}</td>
           <td style="width: 130px;"> 
             <!-- Edit -->
-            <a class="action_link" [routerLink]="['edit', user.id]">
-              <span class="edit_icon material-icons-outlined"> mode_edit </span>
+            <!-- <a class="action_link" [routerLink]="['edit', user.id]"> -->
+            <a class="action_link">
+              <span class="edit_icon material-icons-outlined" (click)="editDaily()"> mode_edit </span>
               <!-- <span class="material-icons-round">
                 edit
               </span> -->
             </a>
 
             <!-- View -->
-            <a class="action_link" [routerLink]="['view', user.id]">
-              <span class="preview_icon material-icons-outlined"> preview </span>
+            <!-- <a class="action_link" [routerLink]="['view', user.id]"> -->
+            <a class="action_link">
+              <span class="preview_icon material-icons-outlined" (click)="previewDaily()"> preview </span>
             </a>
             
             <!-- Delete -->

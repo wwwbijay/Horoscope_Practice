@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CreateMonthlyComponent } from 'src/app/Dialogs/create-monthly/create-monthly.component';
+import { CreateMonthlyComponent } from 'src/app/Dialogs/update-monthly/create-monthly/create-monthly.component';
 
 @Component({
   selector: 'app-update-monthly',

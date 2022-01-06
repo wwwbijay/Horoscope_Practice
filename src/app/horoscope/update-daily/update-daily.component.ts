@@ -3,12 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/services/user.service';
 // import { UserService } from '../services/user.service'; 
 import { MatDialog } from '@angular/material/dialog';
-import { CreateComponent } from 'src/app/Dialogs/create-daily/create.component';
-import { DeleteDailyComponent } from 'src/app/Dialogs/delete-daily/delete-daily.component';
+import { CreateComponent } from 'src/app/Dialogs/update-daily/create-daily/create.component';
+import { DeleteDailyComponent } from 'src/app/Dialogs/update-daily/delete-daily/delete-daily.component';
+import { PreviewDailyComponent } from 'src/app/Dialogs/update-daily/preview-daily/preview-daily.component';
+import { EditDailyComponent } from 'src/app/Dialogs/update-daily/edit-daily/edit-daily.component';
 
 @Component({
   selector: 'app-update-daily',
-  templateUrl: './update-daily.component.html',
+  templateUrl: './update-daily.component.html', 
   styleUrls: ['./update-daily.component.css'], 
 })  
 
@@ -31,6 +33,14 @@ export class UpdateDailyComponent implements OnInit {
 
   openDialog(){
     this.dialogRef.open(CreateComponent);
+  }
+
+  editDaily(){
+    this.dialogRef.open(EditDailyComponent);
+  }
+
+  previewDaily(){
+    this.dialogRef.open(PreviewDailyComponent);
   }
 
   deleteDaily(){

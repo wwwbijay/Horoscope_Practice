@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CreateYearlyComponent } from 'src/app/Dialogs/create-yearly/create-yearly.component';
+import { CreateYearlyComponent } from 'src/app/Dialogs/update-yearly/create-yearly/create-yearly.component';
+// import { CreateYearlyComponent } from 'src/app/Dialogs/update-yearly/create-yearly/create-yearly.component';
 
 @Component({
   selector: 'app-update-yearly',

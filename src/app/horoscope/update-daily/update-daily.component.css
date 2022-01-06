@@ -14,20 +14,17 @@
 
 .edit_icon{
     background-color: rgb(11, 90, 11);
-    color:#fff;
-   
+    color:#fff;   
 }
 
 .preview_icon{
     background-color: rgb(20, 20, 116);
-    color:#fff;
-   
+    color:#fff  
 }
 
 .delete_icon{
     background-color: rgb(129, 24, 24);
-    color:#fff;
-   
+    color:#fff;   
 }
 
 .edit_icon, 

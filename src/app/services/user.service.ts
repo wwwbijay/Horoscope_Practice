@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http'; 
 import { Injectable } from '@angular/core';
  
-// const baseUrl: string = 'https://jsonplaceholder.typicode.com/posts'; 
-const baseUrl: string = 'http://192.168.1.148:3000/signs';  
+const baseUrl: string = 'https://jsonplaceholder.typicode.com/posts'; 
+// const baseUrl: string = 'http://192.168.1.148:3000/signs';  
 
 
 @Injectable({

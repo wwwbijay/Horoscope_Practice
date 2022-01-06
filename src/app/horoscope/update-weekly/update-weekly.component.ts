@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CreateWeeklyComponent } from 'src/app/Dialogs/create-weekly/create-weekly.component';
+import { CreateWeeklyComponent } from 'src/app/Dialogs/update-weekly/create-weekly/create-weekly.component';
 
 @Component({
   selector: 'app-update-weekly',

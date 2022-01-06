@@ -24,14 +24,14 @@ import { PieChartComponent } from './layout/pie-chart/pie-chart.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
-import { CreateComponent } from './Dialogs/create-daily/create.component';
-import { CreateWeeklyComponent } from './Dialogs/create-weekly/create-weekly.component';
+import { CreateComponent } from './Dialogs/update-daily/create-daily/create.component';
+import { CreateWeeklyComponent } from './Dialogs/update-weekly/create-weekly/create-weekly.component';
 import { CreateManageComponent } from './Dialogs/create-manage/create-manage.component';
-import { CreateMonthlyComponent } from './Dialogs/create-monthly/create-monthly.component';
-import { CreateYearlyComponent } from './Dialogs/create-yearly/create-yearly.component';
-import { DeleteDailyComponent } from './Dialogs/delete-daily/delete-daily.component';
-
-
+import { CreateMonthlyComponent } from './Dialogs/update-monthly/create-monthly/create-monthly.component';
+import { CreateYearlyComponent } from './Dialogs/update-yearly/create-yearly/create-yearly.component';
+import { DeleteDailyComponent } from './Dialogs/update-daily/delete-daily/delete-daily.component';
+import { PreviewDailyComponent } from './Dialogs/update-daily/preview-daily/preview-daily.component';
+import { EditDailyComponent } from './Dialogs/update-daily/edit-daily/edit-daily.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +60,10 @@ import { DeleteDailyComponent } from './Dialogs/delete-daily/delete-daily.compon
     CreateMonthlyComponent,
     CreateYearlyComponent,
     DeleteDailyComponent,
+    PreviewDailyComponent,
+    EditDailyComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -70,8 +73,7 @@ import { DeleteDailyComponent } from './Dialogs/delete-daily/delete-daily.compon
     NgChartsModule,
     MatTabsModule, 
     HttpClientModule,
-    MatDialogModule,
-  
+    MatDialogModule,  
   ],
   providers: [],
   bootstrap: [AppComponent]
