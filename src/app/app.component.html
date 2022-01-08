@@ -1,6 +1,6 @@
 <div #Sidenav id="mySidenav" class="sidenav" *ngIf="this.router.url !== '/login'"  [ngClass]="openNav ? 'open' : ' '"> 
     <div class="sideBrand"> 
-        <img src="assets/mypay-logo.png">
+        <a routerLink="/dashboard"><img src="assets/mypay-logo.png"></a>
     </div>
     <app-sidemenu></app-sidemenu>
 </div>
