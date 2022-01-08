@@ -9,10 +9,7 @@ import { SidemenuComponent } from './layout/sidemenu/sidemenu.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
-import { UpdateDailyComponent } from './horoscope/update-daily/update-daily.component';
-import { UpdateMonthlyComponent } from './horoscope/update-monthly/update-monthly.component';
-import { UpdateWeeklyComponent } from './horoscope/update-weekly/update-weekly.component';
-import { UpdateYearlyComponent } from './horoscope/update-yearly/update-yearly.component';
+
 import { BreadcrumbsComponent } from './layout/breadcrumbs/breadcrumbs.component';
 import { UsermanagementComponent } from './user-management/usermanagement/usermanagement.component';
 import { PaymentmanagementComponent } from './payment-management/paymentmanagement/paymentmanagement.component';
@@ -24,29 +21,20 @@ import { PieChartComponent } from './layout/pie-chart/pie-chart.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
-import { CreateComponent } from './Dialogs/update-daily/create-daily/create.component';
-import { CreateWeeklyComponent } from './Dialogs/update-weekly/create-weekly/create-weekly.component';
-import { CreateManageComponent } from './Dialogs/create-manage/create-manage.component';
-import { CreateMonthlyComponent } from './Dialogs/update-monthly/create-monthly/create-monthly.component';
-import { CreateYearlyComponent } from './Dialogs/update-yearly/create-yearly/create-yearly.component';
-import { DeleteDailyComponent } from './Dialogs/update-daily/delete-daily/delete-daily.component';
-import { PreviewDailyComponent } from './Dialogs/update-daily/preview-daily/preview-daily.component';
-import { EditDailyComponent } from './Dialogs/update-daily/edit-daily/edit-daily.component';
+import { HoroscopeModule } from './horoscope/horoscope.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     SidemenuComponent,
-    UpdateDailyComponent,
-    UpdateMonthlyComponent,
-    UpdateYearlyComponent,
+    // UpdateDailyComponent,
+    // UpdateMonthlyComponent,
+    // UpdateYearlyComponent,
     LoginComponent,
     ControlPanelComponent,
-    UpdateDailyComponent,
-    UpdateMonthlyComponent,
-    UpdateWeeklyComponent,
-    UpdateYearlyComponent,
+    
     BreadcrumbsComponent,
     UsermanagementComponent,
     PaymentmanagementComponent,
@@ -54,14 +42,6 @@ import { EditDailyComponent } from './Dialogs/update-daily/edit-daily/edit-daily
     DashboardComponent,
     HoroscopeComponent,
     PieChartComponent,
-    CreateComponent,
-    CreateWeeklyComponent,
-    CreateManageComponent,
-    CreateMonthlyComponent,
-    CreateYearlyComponent,
-    DeleteDailyComponent,
-    PreviewDailyComponent,
-    EditDailyComponent,
   ],
   
   imports: [
@@ -74,6 +54,7 @@ import { EditDailyComponent } from './Dialogs/update-daily/edit-daily/edit-daily
     MatTabsModule, 
     HttpClientModule,
     MatDialogModule,  
+    HoroscopeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
