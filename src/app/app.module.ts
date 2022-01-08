@@ -8,7 +8,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SidemenuComponent } from './layout/sidemenu/sidemenu.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { ControlPanelComponent } from './control-panel/control-panel.component';
+// import { ControlPanelComponent } from './control-panel/control-panel.component';
 
 import { BreadcrumbsComponent } from './layout/breadcrumbs/breadcrumbs.component';
 import { UsermanagementComponent } from './user-management/usermanagement/usermanagement.component';
@@ -33,7 +33,7 @@ import { HoroscopeModule } from './horoscope/horoscope.module';
     // UpdateMonthlyComponent,
     // UpdateYearlyComponent,
     LoginComponent,
-    ControlPanelComponent,
+    // ControlPanelComponent,
     
     BreadcrumbsComponent,
     UsermanagementComponent,
