@@ -1,4 +1,4 @@
-.card{
+/* .card{
     margin: auto;
     padding: 25px;
 }
@@ -20,7 +20,6 @@ label{
     width: 320px;
 }
 
-/*To remove the outline that appears on clicking the input textbox*/
 input:focus {
     outline: none;
 }
@@ -37,4 +36,16 @@ input:focus {
     float: right;
     width: 125px;
     height: 40px;
-} 
+}  */
+
+.create_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.form-control{
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}

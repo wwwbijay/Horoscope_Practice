@@ -1,0 +1,25 @@
+<div class="card">
+    <h6 class="create_heading">Manage Horoscope </h6> 
+    <hr>
+    <form class="form_container" [formGroup] = "createForm">
+        <div class="first_row">
+            <div>
+                <label for="">Choose Horoscope</label><br>
+                <input formControlName="choose" type="text" class="formStyle"> 
+            </div> 
+            <div>
+                <label for="">Date</label><br>
+                <input formControlName="date" type="date" class="formStyle">
+            </div> 
+        </div>
+        <br><br>
+        <label for="">Description(Eng)</label><br>
+        <textarea formControlName="eng" type="text" class="formStyle"> </textarea>
+        <br><br>
+        <label for="">Description(Nep)</label><br>
+        <textarea formControlName="nep" type="text" class="formStyle"> </textarea>
+        <br>
+        <br>
+        <button (click)="clicksub()" class="save_btn">Save</button>  
+    </form> 
+</div>

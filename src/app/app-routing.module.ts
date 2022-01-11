@@ -16,11 +16,14 @@ import { HoroscopeRoutingModule } from './horoscope/horoscope-routing.module';
 // import { UpdateWeeklyComponent } from './horoscope/update-weekly/update-weekly.component';
 // import { UpdateYearlyComponent } from './horoscope/update-yearly/update-yearly.component';
 
-import { UsermanagementComponent } from './user-management/usermanagement/usermanagement.component';
+// import { UsermanagementComponent } from './usermanagement/usermanagement.component';
 
-import { PaymentmanagementComponent } from './payment-management/paymentmanagement/paymentmanagement.component';
+// import { PaymentmanagementComponent } from './payment-management/paymentmanagement/paymentmanagement.component';
 
-import { SettingsComponent } from './settings/settings/settings.component';
+// import { SettingsComponent } from './settings/settings/settings.component';
+import { UsermanagementComponent } from './user-management/usermanagement.component';
+import { PaymentmanagementComponent } from './payment-management/paymentmanagement.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 const routes: Routes = [
@@ -61,7 +64,6 @@ const routes: Routes = [
       },
       canActivate: [AuthGuard],
     },
-
     
     {
       component:SettingsComponent,

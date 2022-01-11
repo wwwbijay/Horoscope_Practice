@@ -8,12 +8,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SidemenuComponent } from './layout/sidemenu/sidemenu.component';
 import { ReactiveFormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-// import { ControlPanelComponent } from './control-panel/control-panel.component';
 
 import { BreadcrumbsComponent } from './layout/breadcrumbs/breadcrumbs.component';
-import { UsermanagementComponent } from './user-management/usermanagement/usermanagement.component';
-import { PaymentmanagementComponent } from './payment-management/paymentmanagement/paymentmanagement.component';
-import { SettingsComponent } from './settings/settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HoroscopeComponent } from './horoscope/horoscope.component';
 import { NgChartsModule } from 'ng2-charts';
@@ -22,6 +18,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import {MatDialogModule} from '@angular/material/dialog';
 import { HoroscopeModule } from './horoscope/horoscope.module';
+import { UsermanagementComponent } from './user-management/usermanagement.component';
+import { PaymentmanagementComponent } from './payment-management/paymentmanagement.component';
+import { SettingsComponent } from './settings/settings.component';
+import { UserManagementModule } from './user-management/user-management.module';
 
 
 @NgModule({
@@ -29,18 +29,12 @@ import { HoroscopeModule } from './horoscope/horoscope.module';
     AppComponent,
     NavMenuComponent,
     SidemenuComponent,
-    // UpdateDailyComponent,
-    // UpdateMonthlyComponent,
-    // UpdateYearlyComponent,
-    LoginComponent,
-    // ControlPanelComponent,
-    
+    LoginComponent,   
     BreadcrumbsComponent,
-    UsermanagementComponent,
     PaymentmanagementComponent,
     SettingsComponent,
     DashboardComponent,
-    HoroscopeComponent,
+    // HoroscopeComponent,
     PieChartComponent,
   ],
   
@@ -54,7 +48,8 @@ import { HoroscopeModule } from './horoscope/horoscope.module';
     MatTabsModule, 
     HttpClientModule,
     MatDialogModule,  
-    HoroscopeModule
+    HoroscopeModule,
+    UserManagementModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
