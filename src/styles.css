@@ -18,7 +18,7 @@
     width: 110px;
     line-height: 45px;
   }
-  .control-panel .menu_logo,
+  /* .control-panel .menu_logo,
   .no-control-panel .menu_icon{
     display: block;
   }
@@ -26,11 +26,7 @@
   .control-panel .menu_icon{
     display: none;
   }
-/* 
-  .control-panel .navbar{
-    margin-left: -250px;
-  } */
 
   .control-panel .openNav{
     margin-left: 17px;
-  }
+  } */

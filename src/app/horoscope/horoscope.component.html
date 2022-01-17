@@ -16,7 +16,7 @@
             <a [routerLink]="'/horoscope/update-yearly'">Yearly Horoscope</a>
         </li>
     </ul>
-</nav> 
+</nav>  
 
 <div *ngIf="this.router.url==='/horoscope'" class="horoscope-page">
     <div class="headline">
@@ -35,7 +35,7 @@
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody *ngFor="let user of listUsers">
+          <tbody *ngFor="let user of listUsers"> 
             <tr>
               <td>{{ user.id }}</td>
               <td>{{ user.title }}</td>
@@ -43,17 +43,17 @@
               <td style="width: 130px;">
                 <!-- Edit -->
                 <a class="action_link" [routerLink]="['edit', user.id]">
-                  <span class="material-icons-outlined"> mode_edit </span>
+                  <span class="edit_icon material-icons"> mode_edit </span>
                 </a>
     
                 <!-- View -->
                 <a class="action_link" [routerLink]="['view', user.id]">
-                  <span class="material-icons-outlined"> preview </span>
+                  <span class="preview_icon material-icons"> remove_red_eye </span> 
                 </a>
                 
                 <!-- Delete -->
                 <a class="action_link" [routerLink]="['delete', user.id]">
-                  <span class="material-icons-outlined"> delete </span>
+                  <span class="delete_icon material-icons"> delete </span>
                 </a>
               </td>
             </tr>

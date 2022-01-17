@@ -51,16 +51,12 @@
         link: 'usermanagement',
         submenu: [
             { 
-                subtitle: 'Brazil',
-                link: '#',
+                subtitle: 'All Users',
+                link: 'usermanagement',
             },
             {
-                subtitle: 'Colombia',
-                link: '#',
-            },
-            {
-                subtitle: 'Argentina',
-                link: '#',
+                subtitle: 'User Roles', 
+                link: 'usermanagement/user-roles',
             }
         ]
     },

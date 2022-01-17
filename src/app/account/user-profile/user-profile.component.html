@@ -1,0 +1,42 @@
+
+<div class="account-dashboard">
+  <div class="row">
+    <div class="col">
+      <div class="whiteheader-item">
+        <h3 class="title text-center w-100">General Information</h3>       
+          <div class="item-profile-pic text-center">
+            <div class="item-profile-pic-image">
+              <img src="assets/img_profile.png" />
+            </div>
+            <div class="item-profile-pic-info">
+              <h5>{{ currentUser.fullName }}</h5>
+              <p>{{ currentUser.userName }}</p>
+            </div>
+          </div>
+          <div class="item-profile-details">
+            <table class="table table-mid-content">
+              <tbody>
+                <tr>
+                  <td>Email</td>
+                  <td>{{ currentUser.email }}</td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>{{ currentUser.userName }}</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>{{ currentUser.phoneNumber }}</td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td>{{ currentUser.gender }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+      <!--.page-item END-->
+    </div>
+  </div>
+</div>

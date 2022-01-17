@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CreateYearlyComponent } from 'src/app/Dialogs/update-yearly/create-yearly/create-yearly.component';
+import { CreateYearlyComponent } from '../Dialogs/update-yearly/create-yearly/create-yearly.component';
 // import { CreateYearlyComponent } from 'src/app/Dialogs/update-yearly/create-yearly/create-yearly.component';
 
 @Component({
@@ -12,12 +12,11 @@ export class UpdateYearlyComponent implements OnInit {
 
   constructor( private dialogRef:MatDialog) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
 
   openDialog(){
     this.dialogRef.open(CreateYearlyComponent);
   }
-
 
 }

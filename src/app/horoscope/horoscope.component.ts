@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router'; 
-import { CreateManageComponent } from '../Dialogs/create-manage/create-manage.component';
-import { HoroscopeDashboardService } from '../services/horoscope-dashboard.service';
+import { CreateManageComponent } from './Dialogs/create-manage/create-manage.component';
+import { HoroscopeDashboardService } from './horoscope-dashboard.service'; 
  
 @Component({
   selector: 'app-horoscope', 
@@ -29,7 +29,7 @@ export class HoroscopeComponent implements OnInit {
   }
 
   openDialog(){
-    this.dialogRef.open(CreateManageComponent);
+    this.dialogRef.open(CreateManageComponent); 
   }
 
 }

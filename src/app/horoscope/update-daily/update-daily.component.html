@@ -2,7 +2,7 @@
   <div class="headline"> 
     <h6>Daily Horoscope</h6> 
     <button type="button" (click)="openDialog()" class="btn btn-primary">+Create</button>
-  </div>  
+  </div>   
   <div class="row"> 
     <table class="table">
       <thead class="thead-dark">  
@@ -10,7 +10,7 @@
           <th scope="col">SN</th>
           <th scope="col">Date</th> 
           <th scope="col">Zodiac</th>
-          <th scope="col">Action</th>
+          <th scope="col">Action</th>  
         </tr>
       </thead>
       <tbody *ngFor="let user of listUsers">
@@ -18,7 +18,7 @@
           <td>{{ user.id }}</td>
           <td>{{ user.title }}</td>
           <td>{{ user.title }}</td>
-          <td style="width: 130px;"> 
+          <td style="width: 130px;">  
             <!-- Edit -->
             <!-- <a class="action_link" [routerLink]="['edit', user.id]"> -->
             <a class="action_link">

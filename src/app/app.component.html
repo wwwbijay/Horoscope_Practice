@@ -1,6 +1,8 @@
 <div #Sidenav id="mySidenav" class="sidenav" *ngIf="this.router.url !== '/login'"  [ngClass]="openNav ? 'open' : ' '"> 
     <div class="sideBrand"> 
-        <img src="assets/mypay-logo.png">
+        <a routerLink="/dashboard"> 
+           <img src="assets/mypay-logo.png">
+        </a>
     </div>
     <app-sidemenu></app-sidemenu>
 </div>
@@ -8,7 +10,7 @@
  <div id="main" class="openNav" [ngClass]="openNav ? 'main-opennav' : ' '">
     <app-nav-menu *ngIf="this.router.url !== '/login'"  [openNav] = openNav (openSideNavFromChild) = "toggleSideNav()" ></app-nav-menu>
     <div  [ngClass] = "(this.router.url === '/login') ? '' : 'content'">  
-        <div class="breadcrumbs">
+        <div *ngIf="this.router.url !== '/login'" class="breadcrumbs">
             <app-breadcrumbs></app-breadcrumbs>
         </div>
         <router-outlet>

@@ -2,29 +2,33 @@
 
 *{
   font-family: 'Poppins', sans-serif; 
-}
+} 
 
 .form-container{ 
   display: flex;
   flex-direction: row;
-  margin: 90px 0 0 160px;
+  margin: 70px 0 0 100px;
+  width: 800px;
+  box-shadow: 2px 3px 10px -3px rgba(0,0,0,0.6);
 }
 
 .left{
   width: 354px;
+
 }
 
 .right{
-  width: 345px;
+  width: 480px;
   background-color: #fff;
-  padding: 40px 10px 20px 10px;
+  /* background-color: rgb(196, 109, 109); */
+  padding: 40px 10px 20px 0px;
 }
 
 .right-welcome{
   font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-style:normal;
+  font-weight:bolder;
+  font-size: 1.5rem;
   line-height: 27px;
   text-align: center;
   color: #000000;
@@ -38,7 +42,7 @@
   font-family: Poppins;
   font-style: bold;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
   padding: 10px;

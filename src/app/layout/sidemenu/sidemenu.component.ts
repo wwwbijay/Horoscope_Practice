@@ -13,7 +13,7 @@ export class SidemenuComponent implements OnInit {
   datas: any[] = dataSource;
  
   
-  constructor(private router: Router) { 
+  constructor(private router: Router) {  
   
   }
 
